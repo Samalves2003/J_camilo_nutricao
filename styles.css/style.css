@@ -593,6 +593,10 @@ nav {
     display: none;
 }
 
+#mais2 {
+    display: none;
+}
+
 #btnLeiaMais2{
     margin-top: 0px;
     background-color: #ffffff34;
