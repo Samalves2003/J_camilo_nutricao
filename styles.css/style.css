@@ -186,6 +186,11 @@ nav {
     font-size: 1.2rem;
 }
 
+.titulo-destaque-home{
+    color: #baab6a;
+    font-size: 1.3rem;
+}
+
 .apresentacao {
     padding: 40px 10rem;
     display: flex;
@@ -207,7 +212,8 @@ nav {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-weight: 400;
     font-family: "Krona One", sans-serif;
     margin-bottom: 1.875rem;
 }
@@ -351,7 +357,7 @@ nav {
 .meu__trabalho__conteudo {
     margin-top: -5%;
     background-color: #204b5e;
-    box-shadow: 2rem -1rem #b4aa7b;
+    
     border-radius: 40px;
     padding: 15px;
     width: 80%;
@@ -412,7 +418,7 @@ nav {
 
 .especialidades {
     background-color: #204b5e;
-    box-shadow: 2rem -1rem #b4aa7b;
+    
     
     padding: 25px;
     border-radius: 25px;
@@ -424,7 +430,7 @@ nav {
 
 .servico {
     background-color: #204b5e;
-    box-shadow: 2rem -1rem #b4aa7b;
+    
     background-size: 350%;
     padding: 30px;
     border-radius: 25px;
@@ -803,7 +809,7 @@ nav {
     justify-content: center;
     border-radius: 15px;
     padding: 25px;
-    box-shadow: 2rem -1rem #b4aa7b;
+    
     margin-bottom: 50px;
   }
   .imc-conteudo-texto{
