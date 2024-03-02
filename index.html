@@ -14,18 +14,21 @@
     <header class="header">
         <nav class="nav">
             <div class="first-div">
-                <img class="logo" src="./src/logotipos/logo_horinzontal.png" alt="">
+                <a href="#home"><img class="logo" src="./src/logotipos/logo_horinzontal.png" alt=""></a>
             </div>
             <button class="hamburger"></button>
             <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#sobremim">Sobre Mim</a></li>
                 <li><a href="#meu-trabalho">Meu Trabalho</a></li>
                 <li><a href="#planos">Planos</a></li>
+                <li><a href="#secaoimc">IMC</a></li>
+                <li><a href="#instagram">IG</a></li>
+                <li><a href="#ctt-end">Localização</a></li>
+
             </ul>
         </nav>
     </header>
-    
+
     <div class="janela-modal" id="janela-modal">
         <div class="modal">
             <button class="fechar" id="fechar">X</button>
@@ -41,7 +44,7 @@
                 Os exames são solicitados, se necessário. Mediante as informações passadas na consulta.
             </p>
         </div>
-    
+
     </div>
     <div class="janela-modal" id="janela-modal2">
         <div class="modal">
@@ -57,7 +60,7 @@
                 Os exames são solicitados, se necessário. Mediante as informações passadas na consulta.
             </p>
         </div>
-    
+
     </div>
     <div class="janela-modal" id="janela-modal3">
         <div class="modal">
@@ -68,9 +71,43 @@
                 bioimpedância. Através disso será avaliado seu IMC, percentual de gordura, percentual de massa muscular.
             </p>
         </div>
-    
+
     </div>
-    
+
+    <div class="janela-modal" id="preencha-corretamente">
+        <div class="modal">
+
+            <button class="fechar" id="fechar">X</button>
+
+        </div>
+
+    </div>
+
+    <div class="janela-modal" id="resultadoIMC1">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1 class="titulo-resultado">Seu IMC é;</strong> </h1>
+            <h2 id="resultadoIMC"></h2>
+            <p class="texto-resultado">Abaixo do peso: IMC abaixo de 18,5.
+                <br><br>
+                Peso normal: IMC entre 18,5 e 24,9.
+                <br><br>
+                Sobrepeso: IMC entre 25 e 29,9.
+                <br><br>
+                Obesidade: IMC de 30 ou mais.
+                <br><br><br>
+                Classificações de IMC que requerem atenção especial são:
+                <br><br>
+                Abaixo de 16: Magreza extrema.
+                <br><br>
+                Obesidade Grau III (mórbida): IMC de 40 ou mais.
+            </p>
+        </div>
+
+    </div>
+
+
+
 
     <main>
         <section id="home" class="apresentacao">
@@ -78,137 +115,146 @@
             <div class="apresentacao__conteudo">
 
 
-                <h1 class="apresentacao__conteudo__titulo">Olá, me chamo João Camilo,<strong class="titulo-destaque"> o
+                <h1 class="apresentacao__conteudo__titulo">Olá, me chamo <strong class="titulo-destaque">João Camilo, o
                         seu
                         nutricionista.</strong></h1>
-                <p class="apresentacao__conteudo__texto">Transforme sua saúde com a nutrição certa e um estilo de vida
-                    equilibrado. Juntos, alcançaremos seus objetivos de forma sustentável. Sua jornada para uma vida
+                <p class="apresentacao__conteudo__texto">Transforme <strong class="imc-strong">sua saúde com a nutrição
+                        certa e um estilo de vida
+                        equilibrado.</strong> Juntos, alcançaremos seus objetivos de forma sustentável. Sua jornada para
+                    uma vida
                     mais saudável começa agora.
-                    <strong class="vamoscvs">Vamos conversar?</strong>
+                    <strong class="imc-strong">Vamos conversar?</strong>
                 </p>
 
                 <div class="apresentacao__links">
-                    <h2 class="apresentacao__link__subtitulo">Agende uma consulta:</h2>
-
-                    <a class="apresentacao__links__link" href="" target="_blank">
-                        <img class="apresentacao__links__icon" src="./src/icons/zap.png" alt="github link">
+                    <a class="apresentacao__links__link" href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+tenho+interesse+em+seus+servi%C3%A7os." >
+                        <img class="apresentacao__links__icon" src="./src/icons/zap.png" alt="wpp link">
                         Whatsapp
                     </a>
                 </div>
+
             </div>
 
-            <img class="apresentacao__foto" src="./src/Img/camilo_mesa.jpeg" alt="foto Samuel Alves">
+            <img class="apresentacao__foto" src="./src/Img/camilo_mesa.jpeg" alt="foto camilo">
         </section>
+        <div class="linha-divisao-pai">
+            <img class="linha-divisao" src="./src/Img/Linha-divisao.png" alt="">
+        </div>
         <section id="sobremim" class="sobre__mim">
-            <div class="div-img">
-                <img class="foto__sobre__mim" src="./src/Img/WhatsApp Image 2024-02-22 at 14.14.54.jpeg" alt="">
-            </div>
+
+            <img class="foto__sobre__mim" src="./src/Img/WhatsApp Image 2024-02-22 at 14.14.54.jpeg" alt="">
+
             <div class="sobre-mim-conteudo">
 
                 <h1 class="sobre__mim__titulo">Sobre mim</h1>
                 <p class="sobre__mim__texto">
-                    Olá! Sou João Camilo, e aos 30 anos, sou um apaixonado por esportes, especialmente pelo
+                    Olá! <strong class="imc-strong">Sou João Camilo</strong>, e aos 30 anos, sou um apaixonado por
+                    esportes, especialmente pelo
                     fisiculturismo, onde já competi duas vezes na categoria mens physique. Minha paixão por uma
-                    vida<span id="pontos">...</span><span id="mais">
-                        saudável e pela alimentação nutritiva me levou a cursar nutrição, onde estou constantemente
-                        ampliando meus conhecimentos para ajudar os outros a alcançarem seus objetivos de saúde. Adoro
-                        ler,
-                        especialmente sobre temas relacionados à minha área e ao comportamento humano. Além de
-                        nutricionista, sou estudante de educação física, outra grande paixão minha. <br><br> Acredito
+                    vida
+                    saudável e pela alimentação nutritiva me levou a cursar <strong class="imc-strong">
+                        nutrição</strong>, onde estou constantemente
+                    ampliando meus conhecimentos para ajudar os outros a alcançarem seus objetivos de saúde.
+                    Adoro
+                    ler,
+                    especialmente sobre temas relacionados à minha área e ao comportamento humano.<strong
+                        class="imc-strong"> Além de
+                        nutricionista, sou estudante de educação física, outra grande paixão minha.</strong> <br><br>
+                    <strong class="imc-strong">Acredito
                         firmemente que
-                        a combinação de treino e alimentação é fundamental para obter resultados duradouros, e nada me
-                        traz
-                        mais satisfação do que cuidar das pessoas e vê-las felizes ao alcançarem seus objetivos. Se você
-                        busca orientação para uma vida mais saudável e equilibrada, estou aqui para ajudar!</span>
-                    <button onclick="leiaMais()" id="btnLeiaMais">Leia Mais</button>
+                        a combinação de treino e alimentação é fundamental para obter resultados duradouros</strong>, e
+                    nada
+                    me
+                    traz
+                    mais satisfação do que cuidar das pessoas e vê-las felizes ao alcançarem seus objetivos. Se
+                    você
+                    busca orientação para uma vida mais saudável e equilibrada, <strong class="imc-strong">estou aqui
+                        para ajudar!</strong>
+
                 </p>
             </div>
 
         </section>
-
+        <div class="linha-divisao-pai">
+            <img class="linha-divisao" src="./src/Img/Linha-divisao.png" alt="">
+        </div>
         <section id="meu-trabalho" class="meu__trabalho">
 
-            
+            <div class="meu__trabalho__conteudo">
+                <h1 class="meu__trabalho__conteudo__title">Meu trabalho</h1>
+                <p class="meu meu__trabalho__conteudo__texto1">Ao ingressar no meu acompanhamento Nutricional,
+                    você
+                    receberá um plano alimentar <strong class="imc-strong">100% personalizado, elaborado exclusivamente
+                        para atender às
+                        suas
+                        necessidades e rotinas diárias.</strong> Entendo
+                    que
+                    cada indivíduo é único, por isso levo em
+                    consideração
+                    seus gostos pessoais, evito restrições alimentares e gosto de trabalhar com metas
+                    diárias
+                    relacionadas a alimentação.
+                    Além disso, <strong class="imc-strong">valorizo a acessibilidade e a praticidade.</strong>
+                    Portanto, todos os alimentos recomendados em seu plano são facilmente encontrados,
+                    garantindo
+                    que
+                    você possa segui-lo com facilidade, independentemente de onde estiver
 
-            <div>
-                <div class="div__icons">
-                    <img class="icons" src="./src/icons/mulher.png" alt="">
-                    <img class="icons" src="./src/icons/treino.png" alt="">
-                    <img class="icons" src="./src/icons/icons8-nutrição-50.png" alt="">
-                </div>
-                <div class="meu__trabalho__div">
-                    <div class="meu__trabalho__conteudo">
-                        <h1 class="meu__trabalho__conteudo__title">Meu trabalho</h1>
-                        <p class="meu meu__trabalho__conteudo__texto1">Ao ingressar no meu acompanhamento Nutricional,
-                            você
-                            receberá um plano alimentar 100% personalizado, elaborado exclusivamente para atender às
-                            suas
-                            necessidades e rotinas diárias.<span id="pontos2">...</span><span id="mais2"> Entendo que
-                                cada indivíduo é único, por isso levo em
-                                consideração
-                                seus gostos pessoais, evito restrições alimentares e gosto de trabalhar com metas
-                                diárias
-                                relacionadas a alimentação.
-                                Além disso, valorizo a acessibilidade e a praticidade.
-                                Portanto, todos os alimentos recomendados em seu plano são facilmente encontrados,
-                                garantindo
-                                que
-                                você possa segui-lo com facilidade, independentemente de onde estiver</span>
-                            <button onclick="leiaMais2()" id="btnLeiaMais2">Leia Mais</button>
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="especialidades__servico">
-                    <div class="especialidades">
-                        <h1 class="especialidades__title">Minhas especialidades</h1>
-                        <div class="alinhamento__especialidades__servicos">
-                            <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
-                            <h3 class="especialidades__servico__title3">Emagrecimento</h3>
-                        </div>
-                        <div class="alinhamento__especialidades__servicos">
-                            <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
-                            <h3 class="especialidades__servico__title3">Ganho de massa muscular</h3>
-                        </div>
-                        <div class="alinhamento__especialidades__servicos">
-                            <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
-                            <h3 class="especialidades__servico__title3">Reeducação alimentar</h3>
-                        </div>
-                        <div class="alinhamento__especialidades__servicos">
-                            <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
-                            <h3 class="especialidades__servico__title3">Performance</h3>
-                        </div>
-                    </div>
-                    <div class="servico">
-                        <h1 class="especialidades__servico__title">Meus serviços</h1>
-                        <h3 class="especialidades__servico__title2">(Clique e saiba mais)</h3>
-                        <div class="alinhamento__especialidades__servicos">
-                            <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
-                            <a class="especialidades__servico__title3link" onclick="abrirModal()">Atendimento Online</a>
-                        </div>
-                        <div class="alinhamento__especialidades__servicos">
-                            <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
-                            <h3 class="especialidades__servico__title3link" onclick="abrirModal2()">Atendimento
-                                Presencial
-                            </h3>
-                        </div>
-                        <div class="alinhamento__especialidades__servicos">
-                            <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
-                            <h3 class="especialidades__servico__title3link" onclick="abrirModal3()">Avaliação
-                                Antropométrica
-                            </h3>
-                        </div>
-                    </div>
-                </div>
+                </p>
             </div>
 
 
+            <div class="especialidades__servico">
+                <div class="especialidades">
+                    <h1 class="especialidades__title">Minhas especialidades</h1>
+                    <div class="alinhamento__especialidades__servicos">
+                        <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
+                        <h3 class="especialidades__servico__title3">Emagrecimento</h3>
+                    </div>
+                    <div class="alinhamento__especialidades__servicos">
+                        <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
+                        <h3 class="especialidades__servico__title3">Ganho de massa muscular</h3>
+                    </div>
+                    <div class="alinhamento__especialidades__servicos">
+                        <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
+                        <h3 class="especialidades__servico__title3">Reeducação alimentar</h3>
+                    </div>
+                    <div class="alinhamento__especialidades__servicos">
+                        <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
+                        <h3 class="especialidades__servico__title3">Performance</h3>
+                    </div>
+                </div>
+                <div class="servico">
+                    <h1 class="servico__title">Meus serviços</h1>
+                    <h3 class="especialidades__servico__title2">Clique e saiba mais</h3>
+                    <div class="alinhamento__especialidades__servicos">
+                        <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
+                        <a class="especialidades__servico__title3link" onclick="abrirModal()">Atendimento Online</a>
+                    </div>
+                    <div class="alinhamento__especialidades__servicos">
+                        <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
+                        <h3 class="especialidades__servico__title3link" onclick="abrirModal2()">Atendimento
+                            Presencial
+                        </h3>
+                    </div>
+                    <div class="alinhamento__especialidades__servicos">
+                        <img class="img_servicos" src="./src/icons/icons8-ok-24.png" alt="">
+                        <h3 class="especialidades__servico__title3link" onclick="abrirModal3()">Avaliação
+                            Antropométrica
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+
         </section>
+        <div class="linha-divisao-pai">
+            <img class="linha-divisao" src="./src/Img/Linha-divisao.png" alt="">
+        </div>
         <section id="planos" class="planos">
             <div class="planos-div">
                 <div class="planos-div-titulo">
-                    <h1 class="planos-titulo-online">Planos atendimento online
+                    <h1 class="planos-titulo-online">Planos atendimento<br><br> Presencial
                         <strong class="barrinha">|</strong>
                         <strong class="titulo-foco-plano">PREMIUM</strong>
                     </h1>
@@ -226,8 +272,8 @@
                                 durante 1 mês via Whatsapp
                             </p>
                             <p class="card-valor"><strong>R$220,00</strong></p>
-                            <a href="#" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt=""> Tenho
-                                interesse nesse plano!
+                            <a href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+me+interessei+no+plano+%2APresencial%2A+Premium+%2AMensal%2A." target="_blank" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt=""> Quero
+                                esse plano!
 
                             </a>
                         </div>
@@ -246,9 +292,8 @@
                                 meses via WhatsApp
                             </p>
                             <p class="card-valor"><strong>R$620,00</strong></p>
-                            <a href="#" class="read-more">
-                                <img class="card-zap" src="./src/icons/zap.png" alt=""> Tenho interesse nesse plano!
-                            </a>
+                            <a href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+me+interessei+no+plano+%2APresencial%2A+Premium+%2ATrimestral%2A." target="_blank" class="read-more">
+                                <img class="card-zap" src="./src/icons/zap.png" alt=""> Quero esse plano! </a>
                         </div>
                     </div>
                     <div class="card">
@@ -264,8 +309,8 @@
                                 6 meses via WhatsApp
                             </p>
                             <p class="card-valor"><strong>R$1188,00</strong></p>
-                            <a href="#" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt=""> Tenho
-                                interesse nesse plano!
+                            <a href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+me+interessei+no+plano+%2APresencial%2A+Premium+%2ASemestral%2A." target="_blank" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt=""> Quero
+                                esse plano!
 
                             </a>
                         </div>
@@ -282,8 +327,8 @@
                                 durante 1 ano Via WhatsApp
                             </p>
                             <p class="card-valor"><strong>R$2224,00</strong></p>
-                            <a href="#" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt=""> Tenho
-                                interesse nesse plano!
+                            <a href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+me+interessei+no+plano+%2APresencial%2A+Premium+%2AAnual%2A." target="_blank" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt=""> Quero
+                                esse plano!
 
                             </a>
                         </div>
@@ -291,7 +336,7 @@
                 </div>
                 <div class="planos-div-titulo">
                     <div class="planos-div-titulo">
-                        <h1 class="planos-titulo-online">Planos atendimento online
+                        <h1 class="planos-titulo-online">Planos atendimento <br><br>Online
                             <strong class="barrinha">|</strong>
                             <strong class="titulo-foco-plano">PREMIUM</strong>
                         </h1>
@@ -310,9 +355,8 @@
                                     suporte online.
                                 </p>
                                 <p class="card-valor"><strong>R$150,00</strong></p>
-                                <a href="#" class="read-more">
-                                    <img class="card-zap" src="./src/icons/zap.png" alt=""> Tenho interesse nesse plano!
-
+                                <a href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+me+interessei+no+plano+%2AOnline%2A+Premium+%2AMensal%2A." target="_blank" class="read-more">
+                                    <img class="card-zap" src="./src/icons/zap.png" alt=""> Quero esse plano!
                                 </a>
                             </div>
                         </div>
@@ -329,9 +373,8 @@
                                     suporte online.
                                 </p>
                                 <p class="card-valor"><strong>R$427,00</strong></p>
-                                <a href="#" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt="">
-                                    Tenho interesse nesse plano!
-                                </a>
+                                <a href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+me+interessei+no+plano+%2AOnline%2A+Premium+%2Trimestral%2A." target="_blank" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt="">
+                                    Quero esse plano! </a>
                             </div>
                         </div>
                         <div class="card">
@@ -347,9 +390,8 @@
                                     suporte online.
                                 </p>
                                 <p class="card-valor"><strong>R$810,00</strong></p>
-                                <a href="#" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt="">
-                                    Tenho interesse nesse plano!
-                                </a>
+                                <a href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+me+interessei+no+plano+%2AOnline%2A+Premium+%2ASemestral%2A." target="_blank" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt="">
+                                    Quero esse plano! </a>
                             </div>
                         </div>
                         <div class="card">
@@ -365,14 +407,109 @@
                                     suporte online
                                 </p>
                                 <p class="card-valor"><strong>R$1500,00</strong></p>
-                                <a href="#" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt="">
-                                    Tenho interesse nesse plano!
-                                </a>
+                                <a href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+me+interessei+no+plano+%2AOnline%2A+Premium+%2AAnual%2A." target="_blank" class="read-more"> <img class="card-zap" src="./src/icons/zap.png" alt="">
+                                    Quero esse plano! </a>
                             </div>
                         </div>
                     </div>
                 </div>
         </section>
+        <div class="linha-divisao-pai">
+            <img class="linha-divisao" src="./src/Img/Linha-divisao.png" alt="">
+        </div>
+        <section id="secaoimc" class="formulario">
+            <h1 class="titulo-secaoIMC">Calcule seu <strong class="barrinha">|</strong> <strong class="atendimento-strong"> IMC</strong></h1>
+            <div class="imc-conteudo">
+                <p class="imc-conteudo-texto">
+                    Como <strong class="imc-strong">nutricionista</strong>, estou aqui para ajudar a interpretar e
+                    utilizar o <strong class="imc-strong">Índice de Massa Corporal (IMC)</strong> de forma eficaz.
+                    <br><br>
+                    Estou à disposição para oferecer orientações personalizadas e ajudar na busca por uma alimentação
+                    equilibrada e um estilo de vida saudável. Lembre-se, o IMC é apenas uma ferramenta inicial e
+                    consultas individuais podem oferecer uma compreensão mais completa da saúde. <strong
+                        class="imc-strong">Agende uma consulta para obter mais informações e orientações específicas
+                        para o seu caso.</strong>
+                </p>
+
+            </div>
+
+            <div class="form-box">
+                <h1 class="title-form">Calculadora de IMC</h1>
+                <div class="container-form">
+                    <div class="altura-peso-calc"></div>
+                    <div class="divAltura">
+                        <label class="title-subtitles" for="altura">Digite Sua Altura (M)</label>
+                        <input type="number" id="altura" required placeholder="Ex...1,80" />
+                    </div>
+                    <div class="divPeso">
+                        <label class="title-subtitles" for="peso">Peso (KG)</label>
+                        <input type="number" id="peso" required placeholder="Ex...70" />
+                    </div>
+
+                    <div class="divCalc">
+                        <button class="btnform" onclick="calcIMC()">Calcular</button>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="apresentacao__links">
+                <a class="apresentacao__links__link" href="https://wa.me/5571991536258?text=Ol%C3%A1%2C+visitei+seu+site+e+gostaria+de+fazer+uma+consulta." target="_blank">
+                    <img class="apresentacao__links__icon" src="./src/icons/zap.png" alt="github link">
+                    Whatsapp
+                </a>
+            </div>
+            </div>
+        </section>
+        <section id="instagram" class="posts-insta">
+            
+            <h1 class="title-insta">Me acompanhe <br>no <strong class="barrinha">|</strong><strong
+                    class="strong-insta">Instagram</strong></h1>
+
+
+            <div class="posts-linha1">
+                <a href="https://www.instagram.com/p/CUdtG6YFPU4/?igsh=bzZ4bnR5c2YwMHB2" target="_blank"><img src="./src/img-insta/1.jpeg" alt="" id="img-ig-1" class="posts-img"></a>
+                <a href="https://www.instagram.com/p/C3AH37hNB-3/?igsh=MWZpd2FvYm4xYjdkcw==" target="_blank"><img src="./src/img-insta/2.jpeg" alt="" id="img-ig-2" class="posts-img"></a>
+                <a href="https://www.instagram.com/p/C3FYCOAgfM9/?igsh=cHNqYWtvbTF1NnN4" target="_blank"><img src="./src/img-insta/3.jpeg" alt="" id="img-ig-3" class="posts-img"></a>
+            </div>
+            <div class="posts-linha2">
+                <a href="https://www.instagram.com/p/CUUk3-grj3q/?igsh=dGV6ZmJsOXF0MXUx" target="_blank"> <img src="./src/img-insta/4.jpeg" alt="" id="img-ig-4"
+                        class="posts-img"></a>
+                <a href="https://www.instagram.com/p/C3Czb9EtSDm/?igsh=cXF2M3Bwc2tscHp3" target="_blank"> <img src="./src/img-insta/5.jpeg" alt="" id="img-ig-5"
+                        class="posts-img"></a>
+                <a href="https://www.instagram.com/p/C22JCdaAyDe/?igsh=MXczZnd4a3p3dHVueA==" target="_blank"> <img src="./src/img-insta/6.jpeg" alt="" id="img-ig-6"
+                        class="posts-img"></a>
+            </div>
+
+        </section>
+        <div class="linha-divisao-pai">
+            <img class="linha-divisao" src="./src/Img/Linha-divisao.png" alt="">
+        </div>
+        <section id="ctt-end" class="contato-endereco">
+            <div>
+            <h1 class="titulo-end-secao">Endereços de <strong class="barrinha">|</strong> <strong class="atendimento-strong" >Atendimento</strong></h1></div>
+            <div class="container-ctt-end">
+                <div class="ends">
+                    <h1 class="titulo-end">SafeFit - Academia em Paripe</h1>
+                    <p class="texto-end">Endereço: Rua Dr. Eduardo Dotto, 49 - Paripe, Salvador - BA, 40800-010</p>
+                    <iframe class="ends-map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31120.43146837183!2d-38.4711926!3d-12.8397914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71613ef3f772e95%3A0x31f4d4dae457a77e!2sSafeFit%20-%20Academia%20em%20Paripe!5e0!3m2!1spt-BR!2sbr!4v1709404186651!5m2!1spt-BR!2sbr"
+                        width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="ends">
+                    <h1 class="titulo-end2">Edifício Profissional Center</h1>
+                    <p class="texto-end">Endereço: Av. Antônio Carlos Magalhães, 2501 - <br> Itaigara, Salvador - BA, 40280-901, Brasil</p>
+                    <iframe class="ends-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.874498536507!2d-38.4741433!3d-12.9898401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b47e4e81669%3A0x1d240c9e10b91d2c!2sCondom%C3%ADnio%20Edif%C3%ADcio%20Profissional%20Center!5e0!3m2!1spt-BR!2sbr!4v1709404660800!5m2!1spt-BR!2sbr" width="500" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+
     </main>
     <script src="./script/index.js"></script>
 
@@ -382,7 +519,17 @@
 </body>
 
 <footer class="rodape">
-    <p>Desenvolvido por Samuel S Alves</p>
+    <div class="footer-container">
+        <div class="samdev">
+            <img class="logo-samdev" src="./src/icons/Logo_S.png" alt="">
+            <img class="logo-deitado-samdev" src="./src/icons/logo_horinzontal.png" alt="">
+
+        </div>
+        <div class="direitos-camilo">
+            <p class="text-footer">© 2024 João Camilo. Todos os direitos reservados.</p>
+        </div>
+    </div>
 </footer>
 
 </html>
+

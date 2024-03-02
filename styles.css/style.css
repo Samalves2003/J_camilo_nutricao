@@ -18,11 +18,11 @@ html {
 
 
 body {
-    
+
     box-sizing: border-box;
     color: #F6F6F6;
-
-    background-image: url(./8751584.jpg);
+    background-image: linear-gradient(#0a222c, #0f2336, #0a222c, #1a2c3d, #0a222c, #2c3e4e);
+    
 }
 
 /*cabecalho*/
@@ -41,26 +41,24 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 
 }
 
-.first-div {
-    margin-left: 2.5rem;
-}
+
 
 .nav-list {
     display: flex;
     gap: 32px;
     list-style: none;
-    
+
     font-size: 1.125rem;
     font-family: "Krona One", sans-serif;
     color: #baab6a;
 }
 
 .nav-list a {
-    font-size: 18px;
+    font-size: 0.8rem;
     padding-block: 16px;
     font-family: "Krona One", sans-serif;
     color: #d8d0ad;
@@ -90,7 +88,7 @@ nav {
 
 
 .logo {
-    width: 12.5rem;
+    width: 10rem;
 }
 
 
@@ -165,17 +163,31 @@ nav {
 
 }
 
+.linha-divisao-pai{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
 
-
+.linha-divisao{
+    margin-top: -10%;
+    width: 50%;
+    
+   
+    
+}
 /*seção home*/
 
 .titulo-destaque {
     color: #baab6a;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .apresentacao {
-    padding: 40px 160px;
+    padding: 40px 10rem;
     display: flex;
     align-items: center;
     gap: 8.125rem;
@@ -189,7 +201,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    background-image: linear-gradient(to bottom right, #204b5e, rgb(20, 94, 112));
+   
     border-radius: 20%;
     padding: 50px;
 }
@@ -220,23 +232,24 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    
 }
 
 .apresentacao__links__link {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
     border: 2px solid #756a39;
     width: 11.81rem;
     text-align: center;
     border-radius: 10px;
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 1rem;
     padding: 0.8rem 0;
     text-decoration: none;
     color: #F6F6F6;
-    font-family: "Krona One", sans-serif;
     transition: 0.5s;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .apresentacao__foto {
@@ -255,8 +268,11 @@ nav {
 }
 
 .apresentacao__links__icon {
-    width: 18px;
-    height: 18px;
+    width:1.5rem ;
+    height: 1.5rem;
+    text-align: center;
+    margin-left: 1rem;
+    
 }
 
 /*Scrol animado*/
@@ -265,26 +281,28 @@ nav {
 
 /*seção sobre mim*/
 
-.sobre__mim {
-    flex-direction: column;
-    background: url(./amarelinho.jpeg);
-    padding: 50px;
-    text-align: center;
+.sobre__mim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 0 10%;
+    margin-top: -7%;
 }
 
-.sobre__mim__secao {
-    display: flex;
-    align-items: center;
-}
 
 .sobre-mim-conteudo {
-    background-color: #204b5e;
+
+    margin-top: -5%;
+    background-size: 700%;
     border-radius: 40px;
     padding: 15px;
+    width: 80%;
+    margin: bottom 90px;
 }
 
 .foto__sobre__mim {
-    width: 500px;
+    width: 30%;
     border-radius: 50%;
     margin-bottom: 50px;
 
@@ -293,6 +311,7 @@ nav {
 
 
 .sobre__mim__titulo {
+    color:#c0b78e;
     font-size: 1.5rem;
     font-family: "Krona One", sans-serif;
     margin-bottom: 30px;
@@ -300,13 +319,12 @@ nav {
 }
 
 .sobre__mim__texto {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight:600;
     margin-bottom: 10px;
     color: #F6F6F6;
-    padding: 0px;
-
+    
 }
 
 .div_conteudo {
@@ -317,70 +335,53 @@ nav {
 /*seção meu trabalho*/
 /*Div icons*/
 
-.trabalho__container {
-    
-    align-items: center;
-    
-}
-
-.div__icons {
+.meu__trabalho {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem;
+    flex-direction: column;
+   
+}
 
+
+
+
+
+
+.meu__trabalho__conteudo {
+    margin-top: -5%;
+    background-color: #204b5e;
+    box-shadow: 2rem -1rem #b4aa7b;
+    border-radius: 40px;
+    padding: 15px;
+    width: 80%;
     
-
-
-
-}
-
-.icons {
-    width: 64px;
-    border-radius: 30px;
-
-    background: url(./azulclarin.jpg);
-}
-
-
-
-
-
-.meu__trabalho {
-    background: url(./azulclarin.jpg);
-    padding: 1% 16%;
-
-}
-
-.meu__trabalho__div {
-    padding: 30px;
-    background: url(./8751584.jpg);
-    border-radius: 15px;
 }
 
 .meu__trabalho__conteudo__title {
-    font-size: 18px;
+    color:#c0b78e;
+    font-size: 1.5rem;
     font-family: "Krona One", sans-serif;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .meu__trabalho__conteudo__texto1 {
-    font-size: 17px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
 .meu__trabalho__conteudo__texto2 {
-    font-size: 17px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .especialidades__servico {
+    
     padding: 30px;
     gap: 2px 160px;
     margin-bottom: 3rem;
@@ -388,11 +389,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   
+
+
 }
 
-.especialidades__servico:hover{
+.especialidades__servico:hover {
     opacity: 1;
 }
 
@@ -402,56 +403,57 @@ nav {
     gap: 10px;
 }
 
+
+
+.especialidades, .servico{
+    margin-top: 4rem;
+    width: 80%;
+}
+
 .especialidades {
-    background: url(./102463.jpg);
-    background-size: 350%;
+    background-color: #204b5e;
+    box-shadow: 2rem -1rem #b4aa7b;
+    
     padding: 25px;
     border-radius: 25px;
     opacity: 0.8;
     transition: 0.5s;
-    
-  
+
+
 }
 
 .servico {
-    background: url(./102463.jpg);
+    background-color: #204b5e;
+    box-shadow: 2rem -1rem #b4aa7b;
     background-size: 350%;
     padding: 30px;
     border-radius: 25px;
     opacity: 0.8;
-    transition: 0.5s;
 }
 
-.especialidades:hover{
-    opacity: 1.0;
-}
-
-.servico:hover{
-    opacity: 1.0;
-}
-
-.especialidades__servico__title {
-    font-size: 18px;
-    font-family: "Krona One", sans-serif;
-    margin-bottom: 5px;
-    text-align: center;
-    color: #756a39;
-}
-
-.especialidades__title{
-    font-size: 18px;
+.servico__title{
+    color: #cebe77;
+    font-size:1.5rem;
     font-family: "Krona One", sans-serif;
     margin-bottom: 10px;
     text-align: center;
-    color: #756a39;
+}
+
+.especialidades__title {
+    color: #cebe77;
+    font-size:1.5rem;
+    font-family: "Krona One", sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+    
 }
 
 .especialidades__servico__title2 {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-family: "Krona One", sans-serif;
     margin-bottom: 30px;
     text-align: center;
-    color: #756a39;
+    color: #cfcfcf;
     font-weight: 300;
 }
 
@@ -460,8 +462,8 @@ nav {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     margin-bottom: 10px;
-    color: #756a39;
-    
+    color: #F6F6F6;
+
 }
 
 
@@ -471,20 +473,23 @@ nav {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     margin-bottom: 10px;
-    color: #756a39;
+    color: #F6F6F6;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .img_servicos {
-    margin-bottom: 10px;
+    width: 120px;
+    margin-bottom: -25px;
 }
 
 /*planos*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
-.planos {}
+.planos{
+    margin-top: -15%;
+}
 
 .planos-titulo-online {
     margin-top: 95px;
@@ -493,6 +498,7 @@ nav {
 }
 
 .planos-titulo-presencial {
+    
     font-family: "Krona One", sans-serif;
     margin-top: 75px;
     margin-bottom: 75px;
@@ -504,11 +510,11 @@ nav {
 }
 
 /*bOTÕES*/
-.janela-modal{
+.janela-modal {
     width: 100%;
     height: 100vh;
-    
-    position:fixed;
+
+    position: fixed;
     left: 0;
     background-color: rgba(0, 0, 0, 0.418);
     display: none;
@@ -517,9 +523,9 @@ nav {
     z-index: 999;
 }
 
-.modal{
+.modal {
     position: relative;
-    
+
     width: 70%;
     min-height: 12.5rem;
     background-color: #f6f6f694;
@@ -527,11 +533,11 @@ nav {
     padding: 50px;
     border-radius: 20px;
     z-index: 2;
-    margin-top: -30%;
+    margin-top: -20%;
 
 }
 
-.fechar{
+.fechar {
     position: absolute;
     top: -5px;
     right: -5px;
@@ -545,39 +551,41 @@ nav {
     font-family: "Krona One", sans-serif;
 }
 
-.janela-modal.abrir{
+.janela-modal.abrir {
     display: flex;
 }
 
-@keyframes abrirModal{
-    from{
+@keyframes abrirModal {
+    from {
         opacity: 0;
         transform: translate3d(0, -20px, -5x);
     }
-    to{
+
+    to {
         opacity: 1;
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
     }
 }
-.abrir .modal{
+
+.abrir .modal {
     animation: abrirModal 0.5s;
 }
 
-.titulo-destaque-modal{
+.titulo-destaque-modal {
     font-family: "Krona One", sans-serif;
     font-size: 1rem;
     color: #756a39;
     font-weight: 400;
 }
 
-.titulo-modal{
+.titulo-modal {
     font-family: "Krona One", sans-serif;
     font-size: 1.5rem;
     color: #756a39;
     margin-bottom: 1rem;
 }
 
-.textos-modal{
+.textos-modal {
     font-family: "Krona One", sans-serif;
     font-size: 1rem;
     color: #303233;
@@ -591,13 +599,19 @@ nav {
 
 #mais {
     display: none;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 #mais2 {
     display: none;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
-#btnLeiaMais2{
+#btnLeiaMais2 {
     margin-top: 0px;
     background-color: #ffffff34;
     border: 2px solid #756a39;
@@ -609,9 +623,10 @@ nav {
     color: #000000;
     font-family: "Krona One", sans-serif;
     transition: 0.3s;
+    cursor: pointer;
 }
 
-#btnLeiaMais  {
+#btnLeiaMais {
     margin-top: 0px;
     background-color: #ffffff34;
     border: 2px solid #756a39;
@@ -623,82 +638,88 @@ nav {
     color: #000000;
     font-family: "Krona One", sans-serif;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #btnLeiaMais:hover {
     background-color: #7a76768f;
-    
+
 }
+
 /*Seção Planos*/
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
 }
-.card{
-    width: 300px;
+
+.card {
+    width:18.75rem;
     background-color: #204b5e;
     padding: 25px;
     border-radius: 50px;
     border: 2px solid #b3b18f;
     transition: 0.5s;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-.card:hover{
-    border: 2px solid #b8860b ;
-   
+.card:hover {
+    border: 2px solid #b8860b;
+
 }
-.titulo-foco-plano{
+
+.titulo-foco-plano {
     color: #baab6a;
     font-weight: 100;
     font-family: "Krona One", sans-serif;
 }
 
-.barrinha{
+.barrinha {
     font-family: "Krona One", sans-serif;
     color: #b8860b;
 }
 
-.conteudo-card-box{
+.conteudo-card-box {
     text-align: center;
-    
+
 }
 
-.card-titulo{
+.card-titulo {
     margin-bottom: 10px;
     text-align: center;
     font-family: "Krona One", sans-serif;
     color: #baab6a;
 }
 
-.card-texto{
+.card-texto {
     margin-bottom: 10px;
     font-family: "Krona One", sans-serif;
     font-weight: 100;
     color: #F6F6F6;
 }
 
-.card-valor{
-        margin-bottom: 20px;
-        font-family: "Krona One", sans-serif;
-        color: #b3b18f;
+.card-valor {
+    margin-bottom: 20px;
+    font-family: "Krona One", sans-serif;
+    color: #b3b18f;
 }
 
-.card-valor{
+.card-valor {
     font-family: "Krona One", sans-serif;
 
 }
 
 
 
-.logo-card-box{
+.logo-card-box {
     width: 6.25rem;
     margin: auto;
     display: block;
 }
 
-.read-more{
+.read-more {
     border: 2px solid #baab6a;
     font-family: "Krona One", sans-serif;
     color: #F6F6F6;
@@ -709,25 +730,400 @@ nav {
     transition: 0.3s;
 }
 
-.read-more:hover{
+.read-more:hover {
     opacity: 1;
 }
 
-.read-more{
-    background-image: linear-gradient(to right, rgb(60, 87, 56) , rgb(62, 148, 76));
+.read-more {
+    background-image: linear-gradient(to right, rgb(60, 87, 56), rgb(62, 148, 76));
 }
 
-.card-zap{
-    width: 20px;
+.card-zap {
+    width: 1rem;
     margin-bottom: -1.25%;
-   
+
 }
 
-/*responsividade*/
+/*Calculadora IMC*/
+
+.titulo-secaoIMC{
+    text-align: center;
+    color:#F6F6F6;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+
+
+}
+
+.formulario {
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+   padding-bottom: 5rem;
+  }
+  
+.form-box{
+    background-color: #204b5e;
+    padding: 50px;
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+  .divAltura, .divPeso, .divCalc {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .title-form{
+    text-align: center;
+    color:#baab6a;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .title-subtitles{
+    text-align: center;
+    color:#ffffff;
+    font-family: "Krona One", sans-serif;
+    font-size: 1rem;
+    
+  }
+  .imc-conteudo{
+    background-color:#0f3f53;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 2rem -1rem #b4aa7b;
+    margin-bottom: 50px;
+  }
+  .imc-conteudo-texto{
+    font-family: "Krona One", sans-serif;
+    font-size: 1rem;
+    color: #F6F6F6;
+    font-weight: 600;
+   
+  }
+
+  .imc-strong{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #d8d0ad;
+  }
+
+  .linha{
+    font-family: "Krona One", sans-serif;
+    font-size: 2rem;
+    color: #756a39;
+    
+  }
+
+  .divPeso{
+    margin-top: 2rem;
+  }
+
+  #altura, #peso{
+    text-align: center;
+  }
+
+  input{
+    
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  } 
+  .btnform {
+    margin-top: 5rem;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    
+  }
+  
+input,
+.btnform {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.btnform {
+
+    cursor: pointer;
+    background-color:#baab6a;
+    color:#0a222c;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+  
+}
+
+.titulo-resultado{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    color: #756a39;
+    margin-bottom: 1rem;
+}
+#resultadoIMC{
+    font-family: "Krona One", sans-serif;
+    font-size: 1rem;
+    color: #756a39;
+    font-weight: 400;
+}
+
+.texto-resultado{
+    font-family: "Krona One", sans-serif;
+    font-size: 1rem;
+    color: #303233;
+    text-align: left;
+}
+
+/*Me acompanhe*/
+
+.posts-insta{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.title-insta{
+    
+    font-family: "Krona One", sans-serif;
+    font-size: 1.8rem;
+    color: #F6F6F6;
+    text-align: center;
+    
+    
+}
+
+.strong-insta{
+    font-family: "Krona One", sans-serif;
+    background-image: linear-gradient(to right, rebeccapurple, rgb(168, 48, 44), rgb(231, 221, 73),rgb(131, 230, 220));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+
+.posts-img{
+    margin-top: 50px;
+    width: 20.875rem;
+    padding: 50px;
+    border-radius: 80px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+
+#img-ig-1:hover{
+    box-shadow:0 0px 5px #fff59b, 0 0 15px #fff59b,
+    0px 0 0px #fff59b, 0 0 100px #fff59b;
+    opacity: 0.7;
+}
+
+#img-ig-2:hover{
+    box-shadow:0 0px 5px #fff59b, 0 0 15px #fff59b,
+    0px 0 0px #fff59b, 0 0 100px #fff59b;
+    opacity: 0.7;
+}
+
+#img-ig-3:hover{
+    box-shadow:0 0px 5px #fff59b, 0 0 15px #fff59b,
+    0px 0 0px #fff59b, 0 0 100px #fff59b;
+    opacity: 0.7;
+}
+
+#img-ig-4:hover{
+    box-shadow:0 0px 5px #fff59b, 0 0 15px #fff59b,
+    0px 0 0px #fff59b, 0 0 100px #fff59b;
+    opacity: 0.7;
+}
+
+#img-ig-5:hover{
+    box-shadow:0 0px 5px #fff59b, 0 0 15px #fff59b,
+    0px 0 0px #fff59b, 0 0 100px #fff59b;
+    opacity: 0.7;
+}
+
+#img-ig-6:hover{
+    box-shadow:0 0px 5px #fff59b, 0 0 15px #fff59b,
+    0px 0 0px #fff59b, 0 0 100px #fff59b;
+    opacity: 0.7;
+}
+
+
+
+
+
+/*Contato-endereço*/
+.titulo-end-secao{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.3rem;
+    color: #F6F6F6;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: -30%;
+    margin-bottom: 30px;
+}
+
+.atendimento-strong{
+    font-family: "Krona One", sans-serif;
+    color: #c0b78e;
+    font-size: 1.5rem;
+}
+
+.contato-endereco{
+   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-ctt-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+    text-align: center;
+
+}
+
+.ends-map{
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    
+}
+
+.titulo-end{
+    
+    margin-bottom: 10px;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    color: #baab6a;
+}
+
+.titulo-end2{
+    
+    margin-bottom: 10px;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    color: #baab6a;
+    
+}
+
+.texto-end{
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7;
+}
+
+/*footer*/
+
+.rodape{
+    background-color: #131212;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.samdev{
+    align-items: center;
+    display: flex;
+}
+
+.logo-samdev{
+    height: 2.5rem;
+}
+
+.logo-deitado-samdev{
+    
+    height: 1.2rem;
+}
+
+.text-footer{
+    font-weight: 100;
+}
 
 @media (max-width: 1100px) {
+    .container-ctt-end{
+       flex-direction: column;    
+    
+    }
 
-    .cards{
+    
+
+    .titulo-end-secao{
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .titulo-end2{
+        margin-top: -150px;
+    }
+
+    .ends-map{
+        width: 80%;
+        
+    }
+
+    .contato-endereco{
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    .posts-insta{
+        text-align: center;
+    }
+    
+    .posts-insta2{
+        text-align: center;
+        
+    }
+
+    .title-insta{
+        margin-bottom: 50px;
+    }
+
+    .posts-img{
+        width: 70%;
+        margin-top: -50px;
+    }
+
+    .cards {
         flex-direction: column;
     }
 
@@ -736,25 +1132,27 @@ nav {
         align-items: center;
         padding: 0px 0px;
     }
+.apresentacao__foto {
+    width: 70%;
+    margin-bottom: -8%;
+}
 
-    .apresentacao__foto {
-        width: 60%;
-        margin-bottom: -70px;
 
-    }
 
     .apresentacao__conteudo {
         margin-bottom: 60px;
+        width: 70%;
     }
 
-    .sobre__mim__secao {
+    .sobre__mim {
         flex-direction: column;
+        margin-bottom: 50px;
 
     }
 
-   
     .foto__sobre__mim {
-        width: 90%;
+        width: 70%;
+        margin-bottom: -5%;
     }
 
     .sobre__mim__texto {
@@ -778,11 +1176,11 @@ nav {
 
     }
 
-    .especialidades{
+    .especialidades {
         margin-bottom: 3rem;
     }
 
-   
+
 
 
     /*Cards*/
