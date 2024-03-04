@@ -202,7 +202,7 @@ nav {
 
 .apresentacao__conteudo {
     width: 50%;
-
+    text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
